@@ -1,0 +1,21 @@
+{
+    "Personas": [
+        {
+            "raca": "Humano",
+            "nome":"Alberto",
+            "classe": "Aventureiro"
+        },
+        {
+            "raca": "Ogro",
+            "nome":"Mug",
+            "classe": "Soldado"
+        },
+        {
+            "raca": "Humano",
+            "nome":"Ronaldo",
+            "classe": "Mago"
+        }
+    ]
+
+    
+}

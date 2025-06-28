@@ -1,5 +1,5 @@
-from abs_persona_factory import CharacterFactory, Race, CharacterClass
-from concrete_persona_products import *
+from absFactory.absPersonaFactory import CharacterFactory, Race, CharacterClass
+from absFactory.concretePersonaProducts import *
 
 # Criando um Factory generico para desaclopar a redundancia.
 class GeneralCharacterFactory(CharacterFactory):

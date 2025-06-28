@@ -1,5 +1,5 @@
-from concrete_persona_factories import GeneralCharacterFactory
-from persona_factory import PlayerCharacter  # sua classe de personagem
+from absFactory.concretePersonaFactories import GeneralCharacterFactory
+from absFactory.personaFactory import PlayerCharacter  # sua classe de personagem
 
 class CharacterBuilder:
     def __init__(self, nome, race_cls, class_cls):

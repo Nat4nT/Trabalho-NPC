@@ -41,7 +41,7 @@ class WarriorStrategy(ActionStrategy):
 
 class AdventurerStrategy(ActionStrategy):
     def attack(self, attacker, target):
-        damage = attacker.forca - target.defesa
+        damage = (attacker.forca ) - target.defesa
         damage = max(damage, 0)
         print(f"{attacker.name} (Aventureiro) golpeia com a adaga causando {damage} de dano.")
         target.take_damage(damage)

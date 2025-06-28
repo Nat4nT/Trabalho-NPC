@@ -1,4 +1,4 @@
-from status.persona_state import CharacterHealthState
+from state.personaState import CharacterHealthState
 import random
 
 class HealthyState(CharacterHealthState):
@@ -10,11 +10,6 @@ class HealthyState(CharacterHealthState):
             persona.set_health_state(BleedingState())
         else:
             self.check_transition(persona)
-
-    def heal(self, persona, amount: int):
-        persona.vida += amount
-        print(f"{persona.name} curou {amount} de vida. Vida: {persona.vida}")
-        self.check_transition(persona)
 
     def get_status_description(self, persona) -> str:
         return f"{persona.name} está **Saudável**."
@@ -38,11 +33,6 @@ class WoundedState(CharacterHealthState):
         else:
             self.check_transition(persona)
 
-    def heal(self, persona, amount: int):
-        persona.vida += amount
-        print(f"{persona.name} curou {amount} de vida. Vida: {persona.vida}")
-        self.check_transition(persona)
-
     def get_status_description(self, persona) -> str:
         return f"{persona.name} está **Ferido**."
 
@@ -61,12 +51,6 @@ class BleedingState(CharacterHealthState):
         print(f"{persona.name}  tomou {amount} de dano. Vida: {persona.vida}")
         self.check_transition(persona)
 
-    def heal(self, persona, amount: int):
-        reduced_heal = amount // 2
-        persona.vida += reduced_heal
-        print(f"{persona.name} está sangrando e a cura é reduzida para {reduced_heal}.")
-        self.check_transition(persona)
-
     def get_status_description(self, persona) -> str:
 
         return f"{persona.name} está **Sangrando**."
@@ -83,9 +67,6 @@ class BleedingState(CharacterHealthState):
 class DeadState(CharacterHealthState):
     def take_damage(self, persona, amount: int):
         print(f"{persona.name} (Morto) não pode tomar mais dano.")
-
-    def heal(self, persona, amount: int):
-        print(f"{persona.name} (Morto) não pode ser curado.")
 
     def get_status_description(self, persona) -> str:
         return f"{persona.name} está **Morto**."

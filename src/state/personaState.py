@@ -8,11 +8,6 @@ class CharacterHealthState(ABC):
         pass
 
     @abstractmethod
-    def heal(self, persona, amount: int):
-        # Lógica para cura .
-        pass
-
-    @abstractmethod
     def get_status_description(self, persona) -> str:
         # Retorna uma descrição do estado atual 
         pass

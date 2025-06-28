@@ -1,4 +1,4 @@
-from abs_persona_factory import Race, CharacterClass
+from absFactory.absPersonaFactory import Race, CharacterClass
 from strategy.strategy import *
 # ---  Raças ---
 class Human(Race):

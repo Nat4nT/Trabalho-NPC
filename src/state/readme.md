@@ -1,0 +1,10 @@
+O padrão State permite que um objeto altere seu comportamento quando seu estado interno muda. O objeto parecerá mudar de classe.
+
+Como está no código:
+O estado de saúde do personagem é controlado por classes de estado (HealthyState, WoundedState, BleedingState, DeadState). Cada estado define como o personagem reage ao dano e cura, e pode mudar para outro estado dependendo da vida atual.
+
+Arquivos principais:
+
+    persona_state.py (implementações de estado)
+
+    persona_state.py (interface CharacterHealthState)

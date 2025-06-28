@@ -15,7 +15,14 @@
             "nome":"Ronaldo",
             "classe": "Mago"
         }
-    ]
+    ],
 
+    "Players": [
+        {
+            "raca": "Humano",
+            "nome":"Nathan Drake",
+            "classe": "Aventureiro"
+        }
+    ]
     
 }

@@ -1,8 +1,8 @@
-from concrete_persona_products import Race, CharacterClass
+from absFactory.concretePersonaProducts import Race, CharacterClass
 
 # Importa as interfaces e classes concretas do padrão State
-from status.persona_state import CharacterHealthState
-from status.concrete_persona_state import HealthyState,WoundedState,BleedingState
+from state.personaState import CharacterHealthState
+from state.concretePersonaState import HealthyState,WoundedState,BleedingState
 
 class PlayerCharacter:
     # Criando Player/Persona , passando o nome, raça e classe.

@@ -1,0 +1,10 @@
+Decorator permite adicionar responsabilidades a objetos dinamicamente, sem modificar seu código.
+
+Como será aplicado:
+Para adicionar buffs aos personagens, será criado um conjunto de decoradores que “envolvem” o personagem, modificando seus atributos (força, vida, defesa) de forma dinâmica e transparente.
+
+Arquivos principais:
+
+    characterDecorator.py
+
+    buffs.py

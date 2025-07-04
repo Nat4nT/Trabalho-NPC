@@ -1,0 +1,31 @@
+Objetivo
+
+*Implementar um sistema de criação e gerenciamento de NPCs utilizando padrões de projeto para garantir organização, flexibilidade e reuso de código.*
+
+
+*Padrões Utilizados*
+
+`Abstract Factory`
+*Permite a criação de famílias de objetos relacionados (combinação de uma Raça e uma Classe de personagem) sem expor suas classes concretas.*
+ 
+
+`Builder`:
+
+*Separa a construção de um objeto complexo (o personagem ) de sua representação, permitindo que o mesmo processo de construção crie diferentes representações.*
+*No caso, ele orquestra a criação do personagem combinando raça e classe de forma controlada.*
+    
+    
+
+`Strategy`
+*Permite que o comportamento de ataque e habilidades especiais de uma  classe seja alterado dinamicamente em tempo de execução.*
+*Cada algoritmo (tipo de ataque ou habilidade) é encapsulado em uma classe separada, permitindo que sejam trocados independentemente do cliente que os utiliza.*    
+   
+
+`State`
+*Permite que o comportamento de um personagem (NPC) mude automaticamente quando seu estado interno (saúde) muda.*
+
+
+
+`Decorator`
+*Adiciona responsabilidades dinamicamente a um objeto (personagem) sem modificar sua estrutura original. Ele é utilizado para aplicar buffs temporários que alteram as características do personagem (atributos, habilidades) em tempo de execução.*
+

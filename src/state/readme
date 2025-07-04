@@ -5,6 +5,6 @@ O estado de saúde do personagem é controlado por classes de estado (HealthySta
 
 Arquivos principais:
 
-    persona_state.py (implementações de estado)
+    concretePersonaState.py (interface CharacterHealthState)
 
-    persona_state.py (interface CharacterHealthState)
+    personaState.py (implementações de estado)

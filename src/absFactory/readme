@@ -7,8 +7,8 @@ A classe GeneralCharacterFactory gera objetos da família (raça + classe) que f
 
 Arquivos principais:
 
-    abs_persona_factory.py (interfaces abstratas)
+    absPersonaFactory.py (interfaces abstratas)
 
-    concrete_persona_factories.py (implementações)
+    concretePersonaFactories.py (implementações)
 
-    concrete_persona_products.py (produtos concretos)
+    concretePersonaProducts.py (produtos concretos)
